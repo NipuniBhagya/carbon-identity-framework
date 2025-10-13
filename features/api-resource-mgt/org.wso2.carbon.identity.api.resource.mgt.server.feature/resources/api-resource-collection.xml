@@ -2157,4 +2157,38 @@
             </Read>
         </Scopes>
     </APIResourceCollection>
+    <APIResourceCollection name="user_credentials" displayName="User Credential Management" type="tenant">
+        <Scopes>
+            <Feature>
+                <Scope name="console:users"/>
+            </Feature>
+            <Update>
+                <Scope name="internal_user_mgt_update"/>
+            </Update>
+            <Delete>
+                <Scope name="internal_user_mgt_delete"/>
+            </Delete>
+            <Create/>
+            <Read>
+                <Scope name="internal_user_mgt_view"/>
+            </Read>
+        </Scopes>
+    </APIResourceCollection>
+    <APIResourceCollection name="org_user_credentials" displayName="User Credential Management" type="organization">
+        <Scopes>
+            <Feature>
+                <Scope name="console:org:users"/>
+            </Feature>
+            <Update>
+                <Scope name="internal_org_user_mgt_update"/>
+            </Update>
+            <Delete>
+                <Scope name="internal_org_user_mgt_delete"/>
+            </Delete>
+            <Create/>
+            <Read>
+                <Scope name="internal_org_user_mgt_list"/>
+            </Read>
+        </Scopes>
+    </APIResourceCollection>
 </APIResourceCollections>
